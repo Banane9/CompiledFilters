@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CompiledFilters</id>
+    <version>1.0.0</version>
+    <title>CompiledFilters</title>
+    <authors>Banane9</authors>
+    <owners>Banane9</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Banane9/CompiledFilters/blob/master/LICENCE</licenseUrl>
+    <projectUrl>http://github.com/Banane9/CompiledFilters</projectUrl>
+    <iconUrl>http://banane9.github.io/favicon.ico</iconUrl>
+    <description>Write reusable filter expressions that get compiled at runtime!</description>
+    <summary>Write reusable filter expressions that get compiled at runtime!</summary>
+    <releaseNotes></releaseNotes>
+    <copyright>Banane9</copyright>
+    <language>en</language>
+    <tags>expressions, dynamic, runtime, filter, predicate, succinct, expressive</tags>
+  </metadata>
+  <files>
+    <file src="CompiledFilters\bin\Release\netstandard2.0\CompiledFilters.deps.json" target="lib\netstandard2.0\CompiledFilters.deps.json" />
+    <file src="CompiledFilters\bin\Release\netstandard2.0\CompiledFilters.dll" target="lib\netstandard2.0\CompiledFilters.dll" />
+    <file src="CompiledFilters\bin\Release\netstandard2.0\CompiledFilters.xml" target="lib\netstandard2.0\CompiledFilters.xml" />
+  </files>
+</package>

@@ -16,7 +16,7 @@ build:
   publish_nuget_symbols: true
   verbosity: minimal
 artifacts:
-- path: nuget/*.nupkg
+- path: C:\Users\appveyor\AppData\Local\Temp\**\*.nupkg
   name: NuPkg
 deploy:
 - provider: NuGet

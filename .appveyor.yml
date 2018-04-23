@@ -1,6 +1,11 @@
 version: 1.0.{build}
+max_jobs: 1
+image: Visual Studio 2017
 skip_branch_with_pr: true
+before_build:
+  - nuget restore CompiledFilters.sln
 build:
+  project: CompiledFilters.sln
   publish_nuget: true
   publish_nuget_symbols: true
   verbosity: minimal

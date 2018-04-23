@@ -1,13 +1,5 @@
 version: 1.0.{build}
 skip_branch_with_pr: true
-dotnet_csproj:
-  patch: true
-  file: '**\*.csproj'
-  version: '{version}'
-  package_version: '{version}'
-  assembly_version: '{version}'
-  file_version: '{version}'
-  informational_version: '{version}'
 build:
   publish_nuget: true
   publish_nuget_symbols: true

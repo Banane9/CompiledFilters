@@ -2,6 +2,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
+    <Authors>Banane9 / Arne Kiesewetter</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Write reusable filter expressions that get compiled at runtime!</Description>
+    <PackageLicenseUrl>https://github.com/Banane9/CompiledFilters/blob/master/LICENCE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Banane9/CompiledFilters</PackageProjectUrl>
+    <PackageIconUrl>http://banane9.github.io/favicon.ico</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Banane9/CompiledFilters</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>expressions, dynamic, runtime, filter, predicate, succinct, expressive</PackageTags>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard2.0\CompiledFilters.xml</DocumentationFile>

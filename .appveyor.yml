@@ -1,14 +1,25 @@
 version: 1.0.{build}
-max_jobs: 1
-image: Visual Studio 2017
 skip_branch_with_pr: true
+image: Visual Studio 2017
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
 before_build:
-  - nuget restore CompiledFilters.sln
+- cmd: nuget restore CompiledFilters.sln
 build:
-  project: CompiledFilters.sln
   publish_nuget: true
   publish_nuget_symbols: true
   verbosity: minimal
+artifacts:
+- path: '**/CompiledFilters.nupkg'
+  name: CompiledFilters.nupkg
+- path: '**/CompiledFilters.symbols.nupkg'
+  name: CompiledFilters.symbols.nupkg
 deploy:
 - provider: NuGet
   api_key:

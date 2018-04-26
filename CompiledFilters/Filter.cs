@@ -135,7 +135,7 @@ namespace CompiledFilters
         }
 
         /// <summary>
-        /// Implicitly casts a <see cref="Filter{T}"/> to a <see cref="Func{T, bool}"/> (for Linq, etc.).
+        /// Implicitly casts a <see cref="Filter{T}"/> to a <see cref="Func{T, TResult}"/> (for Linq, etc.).
         /// </summary>
         /// <param name="filter">The filter to cast.</param>
         public static implicit operator Func<T, bool>(Filter<T> filter)
